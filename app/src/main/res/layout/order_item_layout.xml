@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="#fff">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/tv_pic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_pic"
+        android:padding="5dp"
+        android:text="xxxxxx"
+        android:textColor="#000"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_toRightOf="@id/tv_pic"
+        android:padding="5dp"
+        android:text="×25"
+        android:textColor="#f00"></TextView>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:text="1123"
+        android:textColor="#A223E6"
+        android:textSize="18sp"></TextView>
+</RelativeLayout>

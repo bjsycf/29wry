@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.29wry" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <!--定义一个活动布局样式，继承自无标题栏的布局样式-->
+    <style name="activity_dialog_style" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--设置背景透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--半透明遮罩-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--内容背景-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--点击其他区域关闭窗口-->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <!--浮动于其他activity之上-->
+        <item name="android:windowIsFloating">true</item>
+    </style>
+</resources>

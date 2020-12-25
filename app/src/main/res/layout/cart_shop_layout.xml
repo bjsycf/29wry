@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#CFDCF3">
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="未选购商品"
+                android:textColor="#ED3B96"></TextView>
+
+            <TextView
+                android:id="@+id/tv_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_money"
+                android:layout_alignLeft="@id/tv_money"
+                android:text="配送费5"
+                android:textColor="#EF40BD"></TextView>
+
+            <TextView
+                android:id="@+id/tv_delivery_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="还差20起送"
+                android:textColor="#E33C3C"
+                android:textSize="20sp"></TextView>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_cart_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/shop_car_empty"></ImageView>
+
+        <TextView
+            android:id="@+id/tv_cart_num2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="55dp"
+            android:background="@drawable/cart_food_num_bg"
+            android:gravity="center"
+            android:text="25"
+            android:textColor="#fff"
+            android:textSize="10sp"></TextView>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/shop_item_bg">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_shop_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/tv_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/iv_shop_logo"
+        android:text="蛋糕房"
+        android:textColor="#666"
+        android:textSize="18sp"></TextView>
+
+    <TextView
+        android:id="@+id/tv_shop_sell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_shop_name"
+        android:layout_alignLeft="@id/tv_shop_name"
+        android:layout_marginBottom="5dp"
+        android:text="月销售:996"
+        android:textColor="#666"></TextView>
+
+    <TextView
+        android:id="@+id/tv_delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_shop_sell"
+        android:layout_alignLeft="@id/tv_shop_name"
+        android:layout_marginBottom="5dp"
+        android:text="起送xx,配送费xx"
+        android:textColor="#666"></TextView>
+
+    <TextView
+        android:id="@+id/tv_fuli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_delivery"
+        android:layout_alignLeft="@id/tv_shop_name"
+        android:layout_marginBottom="5dp"
+        android:background="#E53935"
+        android:text="福利："
+        android:textColor="#fff"></TextView>
+
+    <TextView
+        android:id="@+id/tv_fl_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_delivery"
+        android:layout_toRightOf="@id/tv_fuli"
+        android:text="进店获得一个金条"></TextView>
+
+    <TextView
+        android:id="@+id/tv_deliver_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:text="配送约2-5个小时"
+        android:textSize="12sp"></TextView>
+</RelativeLayout>
